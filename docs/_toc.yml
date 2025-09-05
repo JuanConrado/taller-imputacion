@@ -1,0 +1,10 @@
+format: jb-book
+root: intro
+chapters:
+  - file: taller_imputacion
+  - file: exploracion
+  - file: deteccion_faltantes
+  - file: clasificacion_faltantes
+  - file: imputacion
+  - file: evaluacion
+  - file: conclusion
