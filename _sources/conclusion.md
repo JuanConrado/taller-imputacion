@@ -1,4 +1,4 @@
-# Conclusiones
+# Conclusión preliminar
 
 **Resumen del proceso:**  
 1. Exploración inicial de las variables.  

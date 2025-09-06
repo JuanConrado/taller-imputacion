@@ -4,18 +4,11 @@
 **Curso:** Visualización / Machine Learning  
 **Dataset:** `docs/data/base_imputacion_mixta_1000.csv`
 
-## Objetivo
-Desarrollar un flujo reproducible para:  
-1) detectar y describir valores faltantes,  
-2) clasificar su mecanismo (MCAR/MAR/MNAR),  
-3) aplicar y comparar métodos de imputación (numéricas y categóricas), y  
-4) evaluar el impacto de la imputación sobre la distribución y estadísticas clave.
+Este libro recopila el desarrollo completo del **Taller de Imputación de Datos** de la Clase 4.
 
-## Estructura del libro
-- **Lineamientos del Taller**  
-- **Exploración inicial del dataset**  
-- **Detección de faltantes**  
-- **Clasificación MCAR/MAR/MNAR**  
-- **Imputación (múltiples técnicas)**  
-- **Evaluación estadística**  
-- **Conclusiones + tabla resumen**
+## Objetivos
+- Explorar la base de datos.
+- Identificar y clasificar valores faltantes.
+- Aplicar diferentes técnicas de imputación.
+- Evaluar el impacto de la imputación en las distribuciones.
+- Concluir con un resumen de hallazgos y recomendaciones.

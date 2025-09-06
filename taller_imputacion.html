@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Taller de Imputación &#8212; My Jupyter Book</title>
+    <title>Taller de Imputación de Datos – Lineamientos &#8212; Taller de Imputación de Datos</title>
   
   
   
@@ -60,7 +60,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'taller_imputacion';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="exploracion.html" />
+    <link rel="next" title="Exploración inicial de las variables" href="exploracion.html" />
     <link rel="prev" title="Taller de Imputación de Datos" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -148,8 +148,14 @@
   
   
   
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Taller de Imputación de Datos - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Taller de Imputación de Datos - Home"/>`);</script>
   
-    <p class="title logo__title">My Jupyter Book</p>
   
 </a></div>
         <div class="sidebar-primary-item">
@@ -174,9 +180,13 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Taller de Imputación</a></li>
-<li class="toctree-l1"><a class="reference internal" href="clasificacion_faltantes.html">Conclusión</a></li>
-<li class="toctree-l1"><a class="reference internal" href="conclusion.html">Conclusiones</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Taller de Imputación de Datos – Lineamientos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exploracion.html">Exploración inicial de las variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deteccion_faltantes.html">Exploración inicial de las variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="clasificacion_faltantes.html">Clasificación de mecanismos de ausencia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="imputacion.html">Aplicación de técnicas de imputación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="evaluacion.html">Evaluación de la imputación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conclusion.html">Conclusión preliminar</a></li>
 </ul>
 
     </div>
@@ -218,6 +228,70 @@
         <div class="header-article-item">
 
 <div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/JuanConrado/taller-imputacion" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/JuanConrado/taller-imputacion/edit/main/docs/taller_imputacion.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/JuanConrado/taller-imputacion/issues/new?title=Issue%20on%20page%20%2Ftaller_imputacion.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
 
 
 
@@ -302,9 +376,7 @@ document.write(`
   </button>
 `);
 </script>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</button>
+
 </div></div>
       
     </div>
@@ -315,23 +387,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Taller de Imputación</h1>
+    <h1>Taller de Imputación de Datos – Lineamientos</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exploracion-inicial">1. Exploración inicial</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deteccion-de-valores-faltantes">2. Detección de valores faltantes</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clasificacion-del-mecanismo-de-ausencia">3. Clasificación del mecanismo de ausencia</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#imputacion">4. Imputación</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluacion">5. Evaluación</a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -341,44 +401,19 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="taller-de-imputacion">
-<h1>Taller de Imputación<a class="headerlink" href="#taller-de-imputacion" title="Link to this heading">#</a></h1>
-<section id="exploracion-inicial">
-<h2>1. Exploración inicial<a class="headerlink" href="#exploracion-inicial" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Carga, <code class="docutils literal notranslate"><span class="pre">head()</span></code>, <code class="docutils literal notranslate"><span class="pre">info()</span></code>, <code class="docutils literal notranslate"><span class="pre">describe()</span></code>.</p></li>
-<li><p>Identificar variables numéricas y categóricas.</p></li>
-</ul>
-</section>
-<section id="deteccion-de-valores-faltantes">
-<h2>2. Detección de valores faltantes<a class="headerlink" href="#deteccion-de-valores-faltantes" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Tabla con conteo y %.</p></li>
-<li><p>Gráfico de barras por variable con nulos.</p></li>
-<li><p>Visualización de patrón (matrix/correlación de faltantes).</p></li>
-</ul>
-</section>
-<section id="clasificacion-del-mecanismo-de-ausencia">
-<h2>3. Clasificación del mecanismo de ausencia<a class="headerlink" href="#clasificacion-del-mecanismo-de-ausencia" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Hipótesis MCAR/MAR/MNAR por variable con justificación breve.</p></li>
-</ul>
-</section>
-<section id="imputacion">
-<h2>4. Imputación<a class="headerlink" href="#imputacion" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Numéricas: Mediana, KNN (k=5), Iterative/Regresión (ejemplos).</p></li>
-<li><p>Categóricas: Moda, imputación por grupo si aplica.</p></li>
-</ul>
-</section>
-<section id="evaluacion">
-<h2>5. Evaluación<a class="headerlink" href="#evaluacion" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Comparar distribuciones antes/después: KS, t-test/Mann–Whitney.</p></li>
-<li><p>Normalidad (Shapiro en muestras).</p></li>
-<li><p>Comentarios sobre sesgos introducidos.</p></li>
-</ul>
-</section>
+  <section class="tex2jax_ignore mathjax_ignore" id="taller-de-imputacion-de-datos-lineamientos">
+<h1>Taller de Imputación de Datos – Lineamientos<a class="headerlink" href="#taller-de-imputacion-de-datos-lineamientos" title="Link to this heading">#</a></h1>
+<p>En este capítulo se incluyen los <strong>lineamientos generales</strong> del taller:</p>
+<ol class="arabic simple">
+<li><p>Exploración inicial de las variables.</p></li>
+<li><p>Detección y representación gráfica de datos faltantes.</p></li>
+<li><p>Clasificación de mecanismos de ausencia (MCAR, MAR, MNAR).</p></li>
+<li><p>Discusión sobre imputabilidad y técnicas sugeridas.</p></li>
+<li><p>Representación de imputación con gráficas.</p></li>
+<li><p>Evaluación de la imputación con pruebas estadísticas.</p></li>
+<li><p>Conclusiones preliminares.</p></li>
+</ol>
+<hr class="docutils" />
 </section>
 
     <script type="text/x-thebe-config">
@@ -425,7 +460,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">&lt;no title&gt;</p>
+        <p class="prev-next-title">Exploración inicial de las variables</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -436,25 +471,6 @@ document.write(`
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exploracion-inicial">1. Exploración inicial</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deteccion-de-valores-faltantes">2. Detección de valores faltantes</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clasificacion-del-mecanismo-de-ausencia">3. Clasificación del mecanismo de ausencia</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#imputacion">4. Imputación</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluacion">5. Evaluación</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
-              
             
           </div>
           <footer class="bd-footer-content">
@@ -464,7 +480,7 @@ document.write(`
   <div class="footer-item">
     
 <p class="component-author">
-By The Jupyter Book community
+By Juan Camilo Conrado Pacheco
 </p>
 
   </div>
