@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Conclusión &#8212; My Jupyter Book</title>
+    <title>Clasificación de mecanismos de ausencia &#8212; Taller de Imputación de Datos</title>
   
   
   
@@ -60,8 +60,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'clasificacion_faltantes';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="imputacion.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="deteccion_faltantes.html" />
+    <link rel="next" title="Aplicación de técnicas de imputación" href="imputacion.html" />
+    <link rel="prev" title="Exploración inicial de las variables" href="deteccion_faltantes.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -148,8 +148,14 @@
   
   
   
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Taller de Imputación de Datos - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Taller de Imputación de Datos - Home"/>`);</script>
   
-    <p class="title logo__title">My Jupyter Book</p>
   
 </a></div>
         <div class="sidebar-primary-item">
@@ -174,9 +180,13 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="taller_imputacion.html">Taller de Imputación</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Conclusión</a></li>
-<li class="toctree-l1"><a class="reference internal" href="conclusion.html">Conclusiones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="taller_imputacion.html">Taller de Imputación de Datos – Lineamientos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exploracion.html">Exploración inicial de las variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deteccion_faltantes.html">Exploración inicial de las variables</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Clasificación de mecanismos de ausencia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="imputacion.html">Aplicación de técnicas de imputación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="evaluacion.html">Evaluación de la imputación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conclusion.html">Conclusión preliminar</a></li>
 </ul>
 
     </div>
@@ -218,6 +228,70 @@
         <div class="header-article-item">
 
 <div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/JuanConrado/taller-imputacion" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/JuanConrado/taller-imputacion/edit/main/docs/clasificacion_faltantes.ipynb" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/JuanConrado/taller-imputacion/issues/new?title=Issue%20on%20page%20%2Fclasificacion_faltantes.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
 
 
 
@@ -302,7 +376,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -313,11 +389,19 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Conclusión</h1>
+    <h1>Clasificación de mecanismos de ausencia</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusión</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -327,7 +411,9 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <div class="cell docutils container">
+  <section class="tex2jax_ignore mathjax_ignore" id="clasificacion-de-mecanismos-de-ausencia">
+<h1>Clasificación de mecanismos de ausencia<a class="headerlink" href="#clasificacion-de-mecanismos-de-ausencia" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 
@@ -775,7 +861,7 @@ Personas en ciertos segmentos tienden a no reportar su gasto, lo que también co
 </ol>
 <p>👉 Las demás variables con nulos no aparecen en esta tabla porque <strong>no se encontró evidencia estadística de dependencia significativa con variables categóricas</strong> (p&gt;0.05). Eso no significa que sean MCAR automáticamente: algunas podrían depender de variables numéricas (visto en el test t) o ser incluso MNAR.</p>
 <section id="conclusion">
-<h1>Conclusión<a class="headerlink" href="#conclusion" title="Link to this heading">#</a></h1>
+<h2>Conclusión<a class="headerlink" href="#conclusion" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p><strong>Ingresos (12%)</strong>: Su ausencia depende del sexo y también de la puntuación de crédito → se considera <strong>MAR</strong>, aunque podría ser <strong>MNAR</strong> en casos de personas con ingresos muy bajos que no declaran.</p></li>
 <li><p><strong>Gasto mensual (25%)</strong>: La falta de reporte está claramente asociada al <strong>segmento socioeconómico</strong>, por lo tanto corresponde a <strong>MAR</strong>.</p></li>
@@ -783,6 +869,7 @@ Personas en ciertos segmentos tienden a no reportar su gasto, lo que también co
 <li><p><strong>Estado civil (35%)</strong>: Se observan relaciones con variables demográficas, por lo que se clasifica como <strong>MAR</strong>.</p></li>
 <li><p><strong>Sexo (2%)</strong> y <strong>Edad (3%)</strong>: La ausencia es mínima y no muestra dependencia clara, por lo que se consideran <strong>MCAR</strong>.</p></li>
 </ul>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -821,7 +908,7 @@ Personas en ciertos segmentos tienden a no reportar su gasto, lo que también co
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">&lt;no title&gt;</p>
+        <p class="prev-next-title">Exploración inicial de las variables</p>
       </div>
     </a>
     <a class="right-next"
@@ -829,7 +916,7 @@ Personas en ciertos segmentos tienden a no reportar su gasto, lo que también co
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">&lt;no title&gt;</p>
+        <p class="prev-next-title">Aplicación de técnicas de imputación</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -840,6 +927,21 @@ Personas en ciertos segmentos tienden a no reportar su gasto, lo que también co
             
             
               
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusión</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
             
           </div>
           <footer class="bd-footer-content">
@@ -849,7 +951,7 @@ Personas en ciertos segmentos tienden a no reportar su gasto, lo que también co
   <div class="footer-item">
     
 <p class="component-author">
-By The Jupyter Book community
+By Juan Camilo Conrado Pacheco
 </p>
 
   </div>

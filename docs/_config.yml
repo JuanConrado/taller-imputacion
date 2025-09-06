@@ -1,13 +1,13 @@
-title: "Imputación de Datos"
+title: "Taller de Imputación de Datos"
 author: "Juan Camilo Conrado Pacheco"
-language: es
-logo: null
+logo: logo.png   
 
-execute:
-  execute_notebooks: "force"
-  timeout: -1
+repository:
+  url: https://github.com/JuanConrado/taller-imputacion
+  branch: main
+  path_to_book: docs
 
 html:
   use_repository_button: true
-  use_issues_button: false
-  use_edit_page_button: false
+  use_issues_button: true
+  use_edit_page_button: true
